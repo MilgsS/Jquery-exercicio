@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    text-transform: uppercase;
+}
+body{
+    margin-top: 150px;
+}
+
+header, form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: none;
+    text-align: center;
+}
+
+ul {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input, button{
+    padding: 16px;
+}
+
+button{
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+#can{
+    color: rgb(255, 255, 255);
+    background-color: red;
+}
+#can:hover{
+    background-color: rgb(164, 27, 0);
+}
+#add{
+    margin-left: 10px;
+    background-color: rgb(255, 238, 0);
+    color: rgb(0, 0, 0);
+}
+#add:hover{
+    color: white;
+    background-color: rgb(166, 166, 0);
+}
+#sub{
+    color: white;
+    background-color: rgb(0, 231, 0);
+}
+#sub:hover{
+    background-color: green;
+}
+
+ul li{
+    font-size: 20px;
+}
+
+ul li:hover{
+    cursor: pointer;
+    font-weight: bold;
+}
