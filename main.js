@@ -12,13 +12,12 @@ $('#form').on('submit', function(e){
     e.preventDefault(); 
 
     const tarefa = $('.form').val();
-    var nvtarefa = $(`<li style='display none'>${tarefa}</li>`)
+    var nvtarefa = $(`<li style='display: none' id='linha' >${tarefa}</li>`)
     $(nvtarefa).appendTo('ul')
     $(nvtarefa).fadeIn(800)
 
-    $('li').click(function(){
-    const linha = `style='text-decoration: line-through;'`
-    $(linha).appendTo(nvtarefa)
-})
 })
 
+$('li').click(function(){
+    $('li').addClass('linha')
+})
