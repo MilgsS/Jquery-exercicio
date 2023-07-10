@@ -16,8 +16,9 @@ $('#form').on('submit', function(e){
     $(nvtarefa).appendTo('ul')
     $(nvtarefa).fadeIn(800)
 
+    
+    $(nvtarefa).click(function(){
+    $(nvtarefa).addClass('linha')
 })
 
-$('li').click(function(){
-    $('li').addClass('linha')
 })
